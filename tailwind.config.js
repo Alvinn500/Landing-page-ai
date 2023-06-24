@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         'primary': '#7C26BF',
         'accent' : '#E8B00E',
+        'second' : '#A444EF',
       },
       screens: {
         '2xl' : '1320',

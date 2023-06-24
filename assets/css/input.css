@@ -34,5 +34,5 @@ body {
 /* Feature Style */
 
 .card {
-    @apply px-6 py-6 my-7 max-w-[19rem] shadow-xl md:mx-2 md:w-[14rem];
+    @apply px-6 py-6 my-7 max-w-[19rem] shadow-xl md:mx-2 md:w-[14rem] lg:w-[19rem];
 }

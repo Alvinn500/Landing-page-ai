@@ -598,32 +598,24 @@ video {
   margin-right: auto;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.mb-7 {
+  margin-bottom: 1.75rem;
 }
 
 .mt-11 {
   margin-top: 2.75rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.mb-16 {
-  margin-bottom: 4rem;
-}
-
 .block {
   display: block;
-}
-
-.inline {
-  display: inline;
 }
 
 .flex {
@@ -642,10 +634,6 @@ video {
   width: 100%;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .max-w-\[250px\] {
   max-width: 250px;
 }
@@ -654,12 +642,16 @@ video {
   max-width: 100%;
 }
 
-.max-w-md {
-  max-width: 28rem;
-}
-
 .max-w-xs {
   max-width: 20rem;
+}
+
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.max-w-md {
+  max-width: 28rem;
 }
 
 .origin-bottom-left {
@@ -668,10 +660,6 @@ video {
 
 .origin-top-left {
   transform-origin: top left;
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .flex-col {
@@ -722,6 +710,11 @@ video {
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(124 38 191 / var(--tw-bg-opacity));
+}
+
+.bg-second {
+  --tw-bg-opacity: 1;
+  background-color: rgb(164 68 239 / var(--tw-bg-opacity));
 }
 
 .bg-slate-50 {
@@ -791,16 +784,12 @@ video {
   padding-top: 8rem;
 }
 
-.pt-7 {
-  padding-top: 1.75rem;
-}
-
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pt-7 {
+  padding-top: 1.75rem;
 }
 
 .text-center {
@@ -946,17 +935,17 @@ body {
     margin-right: 0.5rem;
     width: 14rem;
   }
+}
 
+@media (min-width: 1024px) {
+  .card {
+    width: 19rem;
+  }
+}
+
+@media (min-width: 768px) {
   .md\:static {
     position: static;
-  }
-
-  .md\:float-right {
-    float: right;
-  }
-
-  .md\:float-left {
-    float: left;
   }
 
   .md\:block {
@@ -973,6 +962,10 @@ body {
 
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:w-80 {
+    width: 20rem;
   }
 
   .md\:max-w-full {
@@ -1009,8 +1002,8 @@ body {
     line-height: 2.5rem;
   }
 
-  .md\:text-7xl {
-    font-size: 4.5rem;
+  .md\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 
@@ -1032,12 +1025,13 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .lg\:mt-0 {
-    margin-top: 0px;
+  .lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .lg\:w-1\/2 {
-    width: 50%;
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:w-96 {
