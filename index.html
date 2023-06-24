@@ -13,26 +13,45 @@
 
     <!-- Navbar Section Start -->
 
-    <header class="bg-primary py-4 absolute top-0 left-0 w-full flex items-center z-10">
+    <header class="bg-primary py-4 absolute top-0 left-0 w-full flex items-center z-10 md:pt-2 lg:pt-2">
         <div class="container">
             <div class="flex items-center justify-between relative px-4">
                 <a href="#home"><img src="assets/img/logo.svg" alt="logo" class="w-9"></a>
-            </div>
-            <div class="flex items-center px-4">
-                <button id="hamburger" name="hamburger" type="button" class="block absolute top-4 right-6">
-                    <span class="hamburger-line transition duration-300 ease-in-ou origin-top-left"></span>
-                    <span class="hamburger-line transition duration-300 ease-in-out"></span>
-                    <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
-                </button>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 md:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-ou origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                
+                    <nav id="nav-menu" class="hidden absolute pt-3 bg-slate-50 shadow-lg rounded-lg max-w-[250px] w-full 
+                    right-4 top-full md:block md:static md:bg-transparent md:max-w-full md:shadow-none md:rounded-none">
+                        <ul class="block md:flex">
+                            <li class="group">
+                                <a href="#home" class="font-semibold text-slate-900 py-2 mx-8 flex md:text-slate-50">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#feature" class="font-semibold text-slate-900 py-2 mx-8 flex md:text-slate-50">Feature</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about" class="font-semibold text-slate-900 py-2 mx-8 flex md:text-slate-50">About</a>
+                            </li>
+                            <li class="group">
+                                <a href="#ayocobasekarang" class="text-slate-50 text-xs font-bold bg-accent flex py-3 px-5 rounded-md">COBA SEKARANG</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
 
     <!-- Navbar Section End -->
 
+
     <!-- Hero Section Start -->
 
-    <section id="home" class="pt-32 pb-20 lg:pt-10 lg:pb-10 bg-primary">
+    <section id="home" class="pt-32 pb-20 md:pt-36 bg-primary">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center text-slate-50 px-4 lg:w-1/2">
@@ -56,13 +75,18 @@
 
     <!-- Hero Section End -->
 
+
     <!-- Fitur Kami Section Start -->
 
-    <!-- <section id="fitur" class="pt-20 pb-20">
+    <section id="feature" class="pt-20 pb-20">
         <div class="container">
-            <div class="flex flex-wrap"></div>
+            <div class="flex flex-col flex-wrap">
+                <div class="w-full self-center text-center">
+                    <h1 class="text-center text-3xl font-bold text-primary">FITUR KAMI</h1>
+                </div>
+            </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Fitur Kami Section End -->
 
